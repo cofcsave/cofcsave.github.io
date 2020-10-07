@@ -1,0 +1,352 @@
+.linedButton {
+	width: 310px;
+	padding: 15px 0;
+	border: 3px solid #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 30px auto;
+	text-decoration: none;
+	color: #fff;
+}
+
+.linedButton.linedOrange {
+	border: 3px solid #FF9D29;
+	color: #FF9D29;
+	width: 225px;
+}
+
+p.smallerP {
+	font-size: 17px;
+}
+
+/* Hero */
+.videoHero {
+	height: 600px;
+}
+.videoContainer {
+	position:absolute;
+	height: 600px;
+	overflow: hidden;
+	width: 100%;
+}
+video {
+	z-index: -2;
+	width: 106%;
+	margin-top: 0;
+}
+
+.blackHeroBox {
+	box-sizing: border-box;
+	padding-top: 185px;
+    background-color: rgba(0,0,0,0.7);
+    width: 795px;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+}
+
+.heroBoxContainer {
+	height: 600px;
+	margin: auto;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+}
+
+.blackHeroBox p{
+	display: inline-block;
+}
+
+#unMute {
+	padding: 50px;
+    position: relative;
+    bottom: -430px;
+    width: 80px;
+    opacity: .5;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#unMute:hover {
+    opacity: 1;
+
+}
+
+#unMuteMobile {
+	display: none;
+}
+
+/* 3 Blue Boxes */
+
+.lineDivide {
+	width: 77px;
+	height: 8px;
+	background-color: #D8D8D8;
+	border-radius: 5px;
+	margin: 15px auto;
+}
+
+.threeBoxes {
+	margin: 120px auto 90px auto;
+}
+
+.threeIcon {
+	text-align: center;
+	width: 85px;
+	display: block;
+	margin: auto;
+    position: relative;
+    top: 9%;
+}
+
+.blueCircle {
+	background-color: #0176B4;
+	border-radius: 100px;
+	width: 105px;
+	height: 105px;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.2);;
+	margin: -90px auto 15px auto;
+}
+
+.threeBlueContent {
+	height: 180px;
+}
+.singleBox {
+	background-color: #0176B4;
+	border-radius: 50px 0 50px 0;
+	width: 285px;
+	height: 375px;
+	padding: 50px 20px 15px 20px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 20px;
+	vertical-align: top;
+}
+
+.shadow {
+	width: 260px;
+	z-index: -1;
+	position: relative;
+	bottom: -95px;
+}
+
+.threeIconMobile {
+	display: none;
+}
+
+/* Scrolling Screens */
+.scrollingScreens {
+	width: 100%;
+	background-image: linear-gradient(180deg, #000000 0%, #01517C 100%);
+	padding: 50px 0 5px 0;;
+}
+
+.scrollingContent {
+	max-width: 760px;
+	margin: auto;
+}
+
+.scrollingContainer {
+  overflow: hidden;
+  max-width: 3375px;
+  margin: 50px auto 30px auto;
+      padding: 10px;
+
+}
+
+.sliding-background {
+  background: url("../img/homepage/scenes2.png") repeat-x;
+  height: 495px;
+  width: 10125px; /* The image width times 3 */
+  animation: slide 70s linear infinite;
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-3375px, 0, 0); /* The image width */
+  }
+}
+
+/* Menu Icon Section */
+
+.menuIconsSection {
+	margin: 120px auto;
+}
+.menuIcon {
+	width: 183px;
+	vertical-align: top;
+	display: inline-block;
+	padding: 9px;
+}
+.menuIcon img {
+	width: 175px;
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 3375px) {
+	.scrollingContainer {
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+	}
+}
+
+@media only screen and (min-width: 2200px) {
+	video {
+		margin-top: -320px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.threeBoxes .container {
+		max-width: 1024px;
+	}
+	.blackHeroBox {
+		padding-top: 130px;
+
+	}
+	.singleBox {
+		margin: 0;
+		width: 30%;
+		height: auto;
+	}
+	.threeBoxes {
+		background-color: #0176B4;
+	}
+	.shadow {
+		display: none;
+	}
+	.threeBlueContent {
+    	height: auto; 
+	}
+	.videoHero {
+		height: 500px;
+	}
+	.heroBoxContainer {
+		height: 500px;
+	}
+	.videoContainer {
+		width: 100%;
+		height: 500px;
+	}
+	video {
+		width: 1024px;
+	}
+	.blackHeroBox {
+		width: 100%;
+	}
+	#unMute {
+    bottom: -325px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.blackHeroBox {
+    	padding-top: 17vw;
+	}
+	.blackHeroBox p {
+		font-size: 17px;
+	}
+	#unMute {
+	    bottom: -369px;
+	    width: 50px;
+	    left: -12px;
+	}
+}
+
+@media only screen and (max-width: 615px) {
+	.threeBoxes {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 50px 10px;
+	}
+	.singleBox {
+		display: block;
+		width: 100%;
+	}
+	.blueCircle {
+    	display: none;
+	}
+	.lineDivide {
+		display: none;
+	}
+	.threeIconMobile {
+		display: inline-block;
+		width: 53px;
+    	padding-right: 15px;
+	}
+	.threeBlueContent h4, .threeBlueContent p {
+		text-align: left;
+	}
+	.menuIcon img {
+	    width: 56px;
+	    display: inline-block;
+	    padding-bottom: 10px;
+	    padding-right: 10px;
+    }
+    .menuIcon {
+    	display: block;
+    	width: 100%;
+    	margin-top: 40px;
+    }
+
+    .menuIcon h5, .menuIcon p {
+    	text-align: left;
+    }
+
+    .menuIconsSection {
+    	padding: 20px;
+    }
+    .menuIconsSection h2{
+    	text-align: left;
+    }
+    .linedButton {
+		width: 220px;
+	}
+	.scrollingContent {
+    	padding: 20px;
+	}
+	video {
+		margin-left: -252px;
+	}
+
+	.blackHeroBox p.mobileDelete {
+		display: none;
+	}
+
+	.blackHeroBox p{
+		display: block;
+	}
+	.blackHeroBox {
+    	padding-top: 10vw;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+	
+    #unMuteMobile {
+		padding: 5px;
+	    display: block;
+	    width: 50px;
+	    margin: auto;
+	    opacity: .3;
+	    cursor: pointer;
+	}
+	#unMute {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+

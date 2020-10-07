@@ -1,0 +1,489 @@
+.contentSpace {
+	padding: 100px 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.questionsSection {
+	max-width: 800px;
+
+}
+
+.questionsSection h2, .questionsSection h4, .questionsSection p{
+	text-align: left;
+	padding-left: 34px;
+	margin-bottom: 0;
+}
+
+.contentSpace h2 {
+	margin-bottom: 0;
+}
+
+
+.supportHeaders {
+	background-color: rgba(0,0,0,.2);
+	margin-bottom: 40px;
+	padding: 20px 0;
+}
+
+/* Disclosure Traingle Questions or Accordions */
+li,ul{
+	list-style-type: none;
+	padding: 0;
+}
+.slider hr {
+	width: 95%;
+    margin: 10px 21px;
+}
+.title{
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	margin: auto;
+}
+.title-img{
+	width: 100%;
+	height: 100%;
+}
+.slider{
+	padding-left: 15px;
+	padding-bottom: 30px;
+}
+.accordion-title{
+	position: relative;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+	font-weight: 800;
+	text-align: left;
+}
+
+.accordion-link{
+	color: #0176B4;
+  text-decoration: none;
+  margin-left: 20px;
+
+}
+.accordion-triangle{
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    top: 4px;
+}
+
+.accordion-triangle:before, .accordion-triangle:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+}
+.accordion-triangle:before {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 0 7px 10px;
+	border-color: transparent transparent transparent #fff;
+	-webkit-transform: rotate(0deg);
+	  -ms-transform: rotate(0deg);
+	      transform: rotate(0deg);
+	transition: 0.5s;
+	}
+
+.accordion-triangle.new:before{
+	-webkit-transform: rotate(90deg);
+	  -ms-transform: rotate(90deg);
+	      transform: rotate(90deg);
+	transition: 0.5s;
+	transform-origin: center;
+}
+
+.accordion-content{
+	display:none;
+	position: relative;
+	border-radius: 25px;
+	}
+
+.content-title{
+	margin: 5px 20px;
+	text-align: left;
+	color: #fff;
+	font-weight: 300;
+}
+.accordion-title.active + .accordion-content{
+  display: block;
+}
+
+.answerLinks {
+	color: orange;
+}
+
+/* END Disclosure Traingle Questions or Accordions */
+
+
+.blueSupportBox {
+	display: inline-block;
+	width: 360px;
+	background-color: #0176B4;
+	vertical-align: top;
+	padding-bottom: 35px;
+	float: right;
+}
+
+.blueSupportBox a:hover {
+	color: orange;
+}
+
+.blueSupportBox p{
+	margin-bottom: 0;
+}
+
+.docsSection {
+	margin-bottom: 40px;
+	padding: 0 20px;
+}
+
+.linedButton {
+    width: 310px;
+    padding: 20px 0;
+    border: 3px solid #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px auto;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Contact Us Section */
+
+.supportContent {
+	width: 100%;
+	margin: 0 auto 60px auto;
+	background-color: rgba(0,0,0,.2);
+    padding: 20px 0;
+}
+
+button[disabled].formSubmit,
+button[disabled].formSubmit:hover,
+button[disabled].formSubmit:active,
+button[disabled].formSubmit:focus { 
+        background: #CCCCCC;
+        box-shadow: none;
+        outline: none;
+        opacity: 0.5;
+        text-decoration: none;
+        cursor: default;
+}
+
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+}
+
+
+#page-wrapper {
+  padding: 0 30px;
+  margin: 1em auto;
+  max-width: 1000px;
+}
+
+#page-wrapper * {
+    -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.field {
+  margin: 1em 0;
+}
+
+.field.fieldEmail, .field.fieldName {
+	display: inline;
+}
+
+.field.fieldName {
+	margin-right: 5px;
+}
+
+.field.fieldEmail {
+	margin-left: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #999999;
+}
+
+input {
+	width: 49.2%;
+	padding: 15px 10px;
+	font-size: 1rem;
+	border: 3px solid #0095da;
+	background-color: rgba(0,0,0,0);
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.radial-but p {
+	text-align: center;
+}
+
+.radial-but {
+	margin: auto;
+	text-align: center;
+}
+
+.supportContent h1 {
+	font-size: 2rem;
+	margin-top: 30px;
+}
+.radio-select {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.radio-select label {
+	margin-top: 27px;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-right: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 17px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 7px;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    width: 19px;
+    height: 19px;
+    border: 2px solid #ddd;
+    border-radius: 100%;
+    background-color: #181818;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #0095da;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px 10px;
+  font-size: 1rem;
+  border: 3px solid #0095da;
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  font-size: 0.9rem;
+  padding: 21px 114px;
+  background: #0095da;
+  color: #fff;
+  background: #0176B4;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.g-recaptcha {
+	display: inline-block;
+}
+
+.recap-center {
+	display: inline-block;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+  font-weight: 300;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+  font-weight: 300;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+  font-weight: 300;
+}
+
+.field.fieldButton {
+	display: inline-block;
+	margin: 0 0 0 20px;
+}
+
+.submitRecap {
+	margin: auto;
+	text-align: center;
+	vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    padding: 27px 0;
+}
+
+.contactUs {
+	clear: both;
+}
+
+@media only screen and (max-width: 1280px) {
+.questionsSection {
+	padding-right: 390px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	input {
+    width: 49%;
+	}
+}
+
+@media only screen and (max-width: 815px) {
+	.questionsSection {
+	max-width: 90%;
+	padding-right: 0;
+	padding-top: 60px;
+	float: none;
+	}
+	.docsSection {
+    margin-bottom: 40px;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: top;
+	}
+
+	.docsSection h4 {
+    font-size: 25px;
+	}
+
+	.blueSupportBox {
+    width: 90%;
+    float: none;
+	}
+
+}
+
+@media only screen and (max-width: 786px) {
+	input {
+    width: 48.5%;
+	}
+	button {
+    padding: 21px 33px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	input {
+    width: 100%;
+	}
+
+	.field.fieldButton {
+    display: block;
+    margin: auto;
+	}
+	button {
+    padding: 21px 111px;
+    margin-top: 20px;
+	}
+	.field.fieldName {
+    margin-right: 0;
+	}
+	.field.fieldEmail {
+	margin-left: 0;
+	}
+	.contentSpace {
+    padding: 30px 0;
+	}
+	.linedButton {
+    width: 268px;
+	}
+}
+
+
+
+
+
+

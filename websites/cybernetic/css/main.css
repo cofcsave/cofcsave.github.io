@@ -1,0 +1,427 @@
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #000;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Open Sans', 'Trebuchet MS', Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Luminant Music custom styles
+   ========================================================================== */
+/* GENERIC */
+body {
+    background-color: #1E1E1E;
+}
+h1, h2, h4, p {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+h1, h2, h4 {
+    text-transform: uppercase;
+}
+h3, h5 {
+    color: #0095da;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+h2 {
+    font-weight: 800;
+    font-size: 40px;
+}
+h3 {
+    font-weight: 800;
+    font-size: 46px;
+}
+h4 {
+    font-weight: 400;
+    font-size: 30px;
+    
+}
+h5 {
+    font-weight: 400;
+    font-size: 23px;
+}
+p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#availableOS {
+    background-color: #FF9D29;
+    padding: 20px 0;
+    
+}
+#availableOS p{
+    color: #000;
+    font-size: 17px;
+    margin: 0;
+}
+
+.availableOS p strong{
+    font-weight: 800;
+}
+
+/* NAVIGATION */
+.container {
+    max-width: 1024px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.container.containLarger {
+    max-width: 1300px;
+}
+nav {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.navBarTop {
+    background-color: #000;
+    padding: 20px 0;
+    font-weight: 700;
+}
+.navBarTop a {
+    color: #FF9D29;
+}
+.navBarLogo, .navBarRight  {
+    display: inline-block;
+}
+.navBarLogo {
+    position: relative;
+    right: 130px;
+}
+.navBarRight {
+    position: relative;
+    left: 140px;
+}
+.navBarRight a:first-child {
+    padding-right: 25px;
+}
+.navBarBottom {
+    background-color: #0176B4;
+}
+.navBarBottom a {
+    padding: 0 57px;
+    line-height: 60px;
+}
+
+.navBarBottom a:hover {
+    color: #FF9D29;
+}
+
+.navBarLogo img {
+    max-width: 335px;
+    width: 100%;
+}
+.hamburger {
+    display: none;
+}
+.navBuyButton {
+    padding: 8px 31px;
+    background-color: #FF9D29;
+    color: #000;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mNavBar {
+    display: none;
+}
+
+.activeNav {
+    height: 100%;
+    display: inline-block;
+    background-color: #05558d;
+}
+
+.activeNavMobile {
+    background-color: #05558d;
+    display: block;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #000;
+    text-transform: uppercase;
+    padding: 50px 0;
+    border-top: 15px solid #0176B4;
+    clear: both;
+}
+.leftFooterSection, .middleFooterSection, .rightFooterSection {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.leftFooterSection {
+    width: 450px;
+}
+
+footer svg {
+    width: 54px;
+    height: 54px;
+}
+
+.middleFooterSection, .rightFooterSection {
+    width: 220px;
+}
+
+.footerNav {
+    margin: auto;
+    text-align: center;
+    padding-left: 67px;
+}
+.footerNav a {
+    padding-bottom: 10px;
+}
+.footerNav a:hover {
+    color: #FF9D29;
+}
+.socialIcon {
+    display: inline-block;
+    padding: 20px 17px;
+}
+
+footer path {
+    fill: #7F7F7F;
+}
+
+footer svg:hover path {
+    fill: #0095da;
+}
+
+
+
+.middleFooterSection a {
+    display: block;
+    text-align: left;
+}
+
+.rightFooterSection a {
+    display: block;
+    font-weight: 700;
+    color: #FF9D29;
+    padding-bottom: 20px;
+}
+
+.footerLegal p {
+    padding: 10px 5px 15px 5px;
+    margin: 0;
+    color: grey;
+    font-size: 15px;
+    text-transform: none;
+}
+
+hr {
+    width: 75%;
+    margin: 40px auto 25px auto;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    .navBarLogo {
+        right: 35px;
+    }
+    .navBarRight {
+        left:35px;
+    }
+    .navBarBottom a {
+    padding: 0 32px;
+    }
+    .navBarLogo img {
+    max-width: 220px;
+    }
+    .footerNav {
+    padding-left: 48px;
+    }
+    .leftFooterSection {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 615px) {
+     .mNavBar {
+        display: block;
+        background-color: #000;
+        text-align: right;
+    }
+    .navBarBottom, .navBarTop {
+        display: none;
+    }
+    .navBarLogo {
+        right: auto;
+        padding-left: 20px;
+        float: left;
+        display: inherit;
+        padding-top: 12px;
+    }
+    .mNavBar a.hamburger {
+        background: #0095da;
+        display: inline-block;
+        padding: 4px 12px;
+        font-size: 30px;
+    }
+    .mNavMenu {
+        background-color: #0095da;
+        display: block;
+    }
+    .mNavMenu a {
+        display: none;
+    }
+    .responsive .mNavMenu a {
+        display: block;
+        padding: 15px 10px;
+        font-size: 20px;
+    }
+    .leftFooterSection img {
+        width: 100%;
+        max-width: 391px;
+    }
+    .leftFooterSection {
+        width: 100%;
+        padding: 0 10px 30px 10px;
+    }
+    footer svg {
+        width: 45px;
+        height: 45px;
+    }
+    .socialIcon {
+        display: inline-block;
+        padding: 20px 7px;
+    }
+    .rightFooterSection {
+    width: 165px;
+    padding-right: 10px;
+    }
+
+    .middleFooterSection {
+    width: 135px;
+    padding-left: 10px;
+    }
+    .footerNav {
+    padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+        
+    }
+    h5 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+ .navBarLogo img {
+    max-width: 160px;
+    }
+    .rightFooterSection, .middleFooterSection, .leftFooterSection {
+        width: 100%;
+        padding: 10px;
+    }
+    .middleFooterSection a {
+    text-align: center;
+    }
+}

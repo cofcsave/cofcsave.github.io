@@ -1,0 +1,209 @@
+.versionHeaderNav {
+	background-color: #121212;
+	padding: 70px 0;
+	margin-bottom: 100px;
+}
+
+.versionHeaderNav h1{
+	margin: 0;
+}
+
+.container .singleVersionRN, .container .singleVersionRN p {
+	text-align: left;
+
+}
+
+.versionTotal {
+	margin-bottom: 50px;
+}
+
+#version2dot0 {
+	display: none;
+}
+
+ul li {
+	color: #fff;
+	list-style: none;
+	padding-left: 0;
+	font-weight: 200;
+}
+
+ul > li {
+    margin-left: 9px;  
+}
+
+/* Prevent nested li's from getting messed up */
+ul > li::before {
+    content: "- ";
+    margin-left: -9px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+p.rn-facts {
+	text-align: left;
+	font-weight: 800;
+	margin: 0;
+	padding-top: 10px;
+}
+.singleVersionRN {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;	
+	flex-wrap: nowrap;
+}
+
+.rightRNSide {
+	flex-grow: 1;
+}
+
+.leftRNSide {
+	flex: 0 0 250px;
+	padding-right: 60px;
+	box-sizing: border-box;
+}
+
+.singleVersionRN .leftRNSide p, .singleVersionRN .leftRNSide h1 {
+    text-align: right;
+}
+
+h1.rn-head {
+	color: #0176B4;
+	font-size: 60px;
+	line-height: 60px;
+    margin-bottom: 5px;
+}
+
+hr.rnLine {
+	border: 1px solid #0176B4;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.versions h4 {
+	display: inline-block;
+	width: 150px;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+
+.versions {
+	width: 315px;
+	margin: auto;
+}
+:focus {
+    outline: none;
+}
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 60px;
+}
+
+.custom-dropdown select {
+  background-color: #121212;
+  color: #0176B4;
+  font-weight: 800;
+  font-size: inherit;
+  padding: 10px 50px 20px 10px;
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /*Hiding the select arrow for firefox*/
+  -moz-appearance: none;
+  /*Hiding the select arrow for chrome*/
+  -webkit-appearance:none;
+  /*Hiding the select arrow default implementation*/
+  appearance: none;
+}
+/*Hiding the select arrow for IE10*/
+.custom-dropdown select::-ms-expand {
+    display: none;
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: 16px;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.custom-dropdown::after {
+  color: #fff;
+}
+
+.custom-dropdown select[disabled] {
+  color: rgba(0,0,0,.25);
+}
+
+@media only screen and (max-width: 768px) {
+	.singleVersionRN {
+	    display: block;
+	    padding: 0 30px;
+	}
+
+	.leftRNSide {
+    flex: auto;
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 30px;
+	}
+
+	.singleVersionRN .leftRNSide p, .singleVersionRN .leftRNSide h1 {
+    text-align: center;
+	}
+
+	hr.rnLine {
+    width: 90%;
+    margin: 60px auto;
+	}
+
+	.versionHeaderNav {
+    margin-bottom: 70px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.versions h4 {
+    width: 90px;
+	}
+	.versions {
+    width: 244px;
+	}
+}
+
+
+
+
+
+
+
+
+

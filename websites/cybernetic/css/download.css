@@ -1,0 +1,285 @@
+.backgroundfly {
+	background: url(../img/flythroughdown.jpg) no-repeat center center;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.containLarger {
+	padding: 0 20px;
+}
+
+
+.backgroundfly span {
+	color: #FF9D29;
+}
+
+.bigButton {
+	background-color: #FF9D29;
+    border-radius: 15px;
+    padding: 23px 0 17px 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 30px;
+    width: 400px;
+    margin: 30px auto 17px;
+}
+
+.bigButton span {
+	color: #000;
+}
+
+.buyNow {
+	background-color: #FF9D29;
+    border-radius: 12px;
+    padding: 9px 0 7px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 30px;
+    width: 175px;
+    margin: 30px auto 17px;
+    text-align: center;
+}
+
+.legalTextHero p {
+	font-size: 17px;
+}
+
+.legalTextHero strong {
+	font-weight: 800;
+}
+
+.legalTextHero p:nth-child(3) {
+	margin-top: 40px;
+}
+
+.bigButton span {
+	font-size: 21px;
+	font-weight: 400;
+}
+
+
+.blackOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 75px 20px;
+}
+
+.buyChart.container {
+	max-width: 960px;
+	position: relative;
+}
+
+.buyChart {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+.buyChart.container div {
+	width: 19%;
+	box-sizing: border-box;
+	display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buyChart h1 {
+    margin-bottom: 0;
+}
+
+sup {
+	font-size: 23px;
+    top: -20px;
+    padding: 5px;
+}
+
+.verBlueBox h4 {
+	padding: 7px;
+}
+
+.verGreyBox {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.verDGreyBox {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buyChart.container .verDGreyBox, .buyChart.container .verGreyBox {
+	text-align: right;
+	justify-content: flex-end;
+}
+
+.regBlueBox.scenesNum p{
+	font-size: 23px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.regBlueBox, .verBlueBox {
+	background-color: #0176B4;
+}
+
+.darkBlueBox {
+	background-color: #05558d;
+}
+
+.regBlueBox p, .darkBlueBox p, .verGreyBox p, .verDGreyBox p {
+	margin: 0;
+	text-align: right;
+}
+
+.regBlueBox, .darkBlueBox, .verGreyBox, .verDGreyBox  {
+	padding: 25px 10px;
+}
+
+.fas.fa-times-circle {
+    color: rgba(0, 0, 0, .4);
+
+}
+
+.fas.fa-check-circle {
+	color: #fff;
+}
+
+.fas.fa-times-circle, .fas.fa-check-circle {
+    font-size: 40px;
+}
+
+.releaseNotesLink {
+	color: orange;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+
+.watermark p {
+	font-size: 13px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -19px;
+}
+
+.watermark .fas.fa-times-circle, .watermark .fas.fa-check-circle {
+	margin-top: -3px;
+}
+
+.verBlueBox h4 {
+	font-size: 17px;
+	margin: 6px 0;
+}
+
+.regBlueBox.chartHeader, .darkBlueBox.chartHeader, .finePrint.chartHeader {
+	width: 99.9%;
+	justify-content: center;
+}
+
+.legalStuff.container {
+	margin-bottom: 75px;
+}
+@media only screen and (max-width: 920px) {
+	.buyChart.container {
+	max-width: 660px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.buyChart.container {
+	max-width: 660px;
+	}
+	.buyChart.container .verDGreyBox, .buyChart.container .verGreyBox {
+	width: 100%;
+	justify-content: center;
+	}
+	.buyChart.container .verDGreyBox, .buyChart.container .verGreyBox{
+	background-color: #05558d;
+	}
+	.buyChart.container div {
+	width: 25%;
+	}
+
+	.buyChart.container div.goneMobile {
+	display: none;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	}
+
+	.darkBlueBox {
+    background-color: #0176B4;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	sup {
+    font-size: 17px;
+    top: -9px;
+    padding: 3px;
+	}
+	.buyChart h1 {
+    margin-bottom: 0;
+    font-size: 30px;
+	}
+	.chartButtonStyleMobile {
+    width: 80%;
+	}
+
+	.verBlueBox h4 {
+    font-size: 14px;
+    margin: 6px 0;
+	}
+
+	.watermark p {
+	font-size: 11px;
+	}
+	.regBlueBox, .darkBlueBox, .verGreyBox, .verDGreyBox {
+    padding: 17px 4px;
+	}
+
+	.bigButton {
+    padding: 23px 0 17px 0;
+    width: 250px;
+    font-size: 30px;
+	}
+	h1 {
+    font-size: 24px;
+	}
+	.legalTextHero p {
+    font-size: 14px;
+	}
+	.backgroundfly {
+    margin-bottom: 25px;
+	}
+
+	.blackOverlay {
+    padding: 35px 10px;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	sup {
+	    font-size: 14px;
+	    top: -11px;
+	    padding: 1px;
+	}
+}
+
+
+
+
+

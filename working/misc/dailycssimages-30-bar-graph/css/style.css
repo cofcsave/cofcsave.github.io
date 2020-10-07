@@ -1,0 +1,143 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Fugaz One', cursive;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.skills {
+  animation-name: skillsA;
+  animation: skillsA 1.25s cubic-bezier(0.17, 0.67, 0, 1);
+}
+
+body {
+  background: #eee;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section article.skills {
+  width: 600px;
+}
+section article.skills p {
+  z-index: 2;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top:18px;
+  margin-bottom:18px;
+}
+section article.skills div span:nth-child(1) {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+}
+section article.skills div span:nth-child(2) {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #5E95E8;
+  height: 100%;
+}
+section article.skills div:nth-child(1) span:nth-child(2) {
+  width: 85%;
+  animation-delay: 0;
+}
+section article.skills div:nth-child(2) span:nth-child(2) {
+  width: 85%;
+  animation-delay: 0.05s;
+}
+section article.skills div:nth-child(3) span:nth-child(2) {
+  width: 50%;
+  animation-delay: 0.1s;
+}
+section article.skills div:nth-child(4) span:nth-child(2) {
+  width: 85%;
+  animation-delay: 0.15s;
+}
+section article.skills div:nth-child(5) span:nth-child(2) {
+  width: 75%;
+  animation-delay: 0.2s;
+}
+section article.skills div:nth-child(6) span:nth-child(2) {
+  width: 85%;
+  animation-delay: 0.25s;
+}
+section article.skills div:nth-child(7) span:nth-child(2) {
+  width: 75%;
+  animation-delay: 0.25s;
+}
+section article.skills div:nth-child(8) span:nth-child(2) {
+  width: 95%;
+  animation-delay: 0.3s;
+}
+section article.skills div:nth-child(9) span:nth-child(2) {
+  width: 95%;
+  animation-delay: 0.35s;
+}
+section article.skills div:nth-child(10) span:nth-child(2) {
+  width: 95%;
+  animation-delay: 0.35s;
+}
+
+
+
+@keyframes skillsA {
+  0% {
+    left: -600px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}

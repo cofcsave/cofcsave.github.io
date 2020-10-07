@@ -1,0 +1,460 @@
+.FeatHeroSection {
+    position: relative;
+    height: 475px;
+}
+
+.heroBackContainer {
+    height: 245px;
+    background: url("../img/features/heroback.jpg") no-repeat center center; 
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 245px;
+    }
+.heroContent {
+    max-width: 1237px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+
+.heroContent img {
+    right: 770px;
+    margin-left: -244px;
+}
+
+.heroHeadline {
+    width: 615px;
+    float: right;
+    padding-right: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 245px;
+    margin-left: -196px;
+}
+
+.allFeatures {
+    width: 100%;
+    overflow: hidden;
+}
+
+.allFeatures h5 {
+    font-size: 45px;
+    text-align: left;
+    margin-top: 0;
+    line-height: 41px;
+}
+
+.allFeatures p {
+    text-align: left;
+}
+
+.featursIconDesktop {
+    left: 0px;
+    width: 365px;
+    top: 106px;
+}
+
+.featursIconDesktop, .featuresIconMobile {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0176B4;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.featursIconMobile { 
+    display: none;
+    }
+
+.leftImgRightText, .rightImgLeftText {
+    padding: 33px 0 30px 0;
+    position: relative;
+    margin: 130px auto;
+}
+
+
+
+.leftMenu.trees {
+    background: url("../img/features/cherryblossomsback.jpg") no-repeat center center; 
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.leftMenu.solar {
+    background: url("../img/features/solareclipseback.jpg") no-repeat center center; 
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.leftMenu.butterfly {
+    background: url("../img/features/butterflyback.jpg") no-repeat center center; 
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rightMenu.flythrough {
+    background: url("../img/features/flythroughback.jpg") no-repeat center center; 
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rightMenu.concentric {
+    background: url("../img/features/concentricback.jpg") no-repeat center center; 
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.leftMenu, .rightMenu {
+    position: relative;
+    display: inline-block;
+    width: 53.5%;
+    height: 510px;
+}
+
+.rightMenu {
+    float: right;
+}
+
+.blackBoxBackRight {
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0,0,0,.5);
+    top: 9px;
+    width: 56%;
+    height: 560px;
+    right: 0;
+}
+
+.blackBoxBackLeft {
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0,0,0,.5);
+    top: 9px;
+    width: 56%;
+    height: 560px;
+    left: 0;
+}
+
+.blackBoxBackRight {
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0,0,0,.5);
+    top: 9px;
+    width: 56%;
+    height: 560px;
+    right: 0;
+}
+.menuImageLeft, .menuImageRight {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.micSmaller{
+    width: 347px;
+}
+
+.menuImageLeft.vertCenterMenu {
+    top:0;
+}
+
+.rightBlackBox {
+    background: rgba(0,0,0,.3);
+}
+
+.contentSectionRight {
+    width: 46%;
+    display: inline-block;
+    height: 510px;
+    vertical-align: top;
+}
+
+.maxWidthContentRight {
+    max-width: 500px;
+    display: table;
+    height: 510px;
+    margin-left: 146px;
+}
+
+.maxWidthContentLeft {
+    max-width: 500px;
+    display: table;
+    height: 510px;
+    margin-right: 146px;
+    margin-left: 25px;
+    float: right;
+}
+
+.middleAlign {
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+ul li {
+    color: #fff;
+    list-style: none;
+    padding-left: 0;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+ul > li {
+    margin-left: 20px;  
+}
+
+ul > li::before {
+    content: "\25CF";
+    margin-left: -25px;
+    color: #0176B4;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 2000px) {
+    .menuImageLeft {
+    left: auto;
+    right: 350px;
+    }
+
+    .menuImageRight {
+    right: auto;
+    left: 350px;
+    }
+
+    .maxWidthContentRight {
+    margin-left: 215px;
+    }
+
+    .maxWidthContentLeft {
+    margin-right: 215px;
+
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .menuImageLeft {
+    left: 0;
+    right: auto;
+    width: 427px;
+    }
+
+    .menuImageLeft.micSmaller {
+    width: 327px;
+    }
+
+    .featursIconDesktop {
+    width: 300px;
+    top: 136px;
+    }
+
+    .maxWidthContentRight {
+    margin-left: 120px;
+    }
+
+    .maxWidthContentLeft {
+    margin-right: 120px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .FeatHeroSection {
+        position: relative;
+        height: auto;
+        padding: 20px;
+    }
+
+    .heroBackContainer {
+        display: none;
+    }
+    .heroContent {
+        max-width: 1237px;
+        /*margin: auto;*/
+        position: relative;
+        /*top: 0;
+        text-align: center;
+        right: 0;
+        left: 0;*/
+    }
+
+    .heroContent img {
+        display: none;
+    }
+
+    .heroHeadline {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+    display: block;
+    margin-top: 70px;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+
+    .blackBoxBackRight, .blackBoxBackLeft {
+    display: none;
+    }
+
+    .contentSectionRight {
+    width: 100%;
+    display: block;
+    height: auto;
+    vertical-align: top;
+    background: rgba(0,0,0,.3);
+    height: auto;
+    margin-bottom: 8vw;
+    }
+
+    .maxWidthContentRight, .maxWidthContentLeft {
+    max-width: 90%;
+    padding:120px 0 50px 0;
+    margin: auto;
+    display: block;
+    height: auto;
+    float: none;
+    }
+
+    .leftMenu {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-top: 17vw;
+    }
+
+    .rightMenu {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-top: 17vw;
+    float: none;
+    }
+
+    .menuImageLeft, .menuImageRight {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 480px;
+    width: 73%;
+    }
+
+    .menuImageRight.smallerMenuImageR {
+    max-width: 333px;
+    width: 53%;
+    }
+
+     .menuImageRight.largerMenuImageR {
+    max-width: 565px;
+    width: 75%;
+     }
+
+    .menuImageLeft.micSmaller {
+    width: 75%;
+    max-width: 360px;
+    }
+
+    .featursIconDesktop {
+    display: none;
+    }
+    .featursIconMobile {
+     left: 0;
+    width: 200px;
+    top: 184px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0176B4;
+    border-radius: 100%;
+    vertical-align: middle;
+    }
+
+    .allFeatures h5 {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+    .menuImageLeft.vertCenterMenu {
+    top: auto;
+    margin-bottom: 5vw;
+    }
+
+    .leftImgRightText, .rightImgLeftText {
+    margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .featursIconMobile {
+    width: 125px;
+    top: 225px;
+    }
+
+    .maxWidthContentRight, .maxWidthContentLeft {
+    padding: 67px 0 50px 0;
+    }
+
+    .allFeatures h5 {
+    font-size: 35px;
+    }
+    ul li {
+    font-size: 17px;
+    }
+
+    ul > li::before {
+    content: "\25CF";
+    margin-left: -25px;
+    color: #0176B4;
+    font-size: 17px;
+    padding-right: 14px;
+    }
+  .leftMenu {
+    margin-top: 5vw;
+    }
+
+    .rightMenu {
+    margin-top: 5vw;
+    }
+
+    .menuImageLeft.micSmaller {
+    width: 68%;
+    }
+}

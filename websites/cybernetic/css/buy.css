@@ -1,0 +1,260 @@
+.buyChart.container {
+	max-width: 830px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.backgroundCubes {
+	background: url(../img/cubicpatch.jpg) no-repeat center center;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.backgroundCubes, .blackOverlay {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+}
+.blackOverlay {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.buyChart.desktopChart {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+.liteColumn, .standardColumn, .ultimateColumn {
+	width: 30%;
+	box-sizing: border-box;
+}
+
+.liteColumn div, .standardColumn div, .ultimateColumn div {
+	box-sizing: border-box;
+}
+
+.buyChart h1 {
+    margin-bottom: 0;
+}
+
+.finePrint p {
+	font-size: 15px;
+}
+
+.finePrint {
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+sup {
+	font-size: 23px;
+    top: -20px;
+    padding: 5px;
+}
+
+.verBlueBox h4 {
+	padding: 7px;
+}
+
+
+.chartButtonStyle {
+	background-color: #FF9D29;
+    border-radius: 13px;
+    padding: 5px;
+    margin: 0 11px;
+}
+
+a .chartButtonStyle {
+	color: #000;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.chartButtonStyle span {
+	font-size: 17px;
+	font-weight: normal;
+	text-transform: none;
+	display: block;
+	line-height: 16px;
+}
+
+.regBlueBox.scenesNum p{
+	font-size: 23px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.regBlueBox.scenesNum{
+	justify-content: center;
+}
+
+.regBlueBox, .verBlueBox {
+	background-color: #0176B4;
+}
+
+.darkBlueBox {
+	background-color: #05558d;
+}
+
+.regBlueBox p, .darkBlueBox p {
+	text-align: right;
+	margin: 0;
+	display: inline-block;
+}
+
+.regBlueBox , .darkBlueBox  {
+	padding: 23px 20px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.fas.fa-times-circle {
+    color: rgba(0, 0, 0, .4);
+
+}
+
+.fas.fa-check-circle {
+	color: #fff;
+}
+
+.fas.fa-times-circle, .fas.fa-check-circle {
+    font-size: 34px;
+    padding-left: 15px;
+}
+
+.releaseNotesLink {
+	color: orange;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+.legalStuff {
+	margin-bottom: 100px;
+}
+
+	.buyChart.mobileChart {
+		display: none;
+		visibility: hidden;
+		height: 1px;
+		margin: 0;
+	}
+
+
+@media only screen and (max-width: 630px) {
+.verBlueBox h4 {
+	font-size: 17px;
+	margin: 6px 0;
+}
+	.buyChart.desktopChart {
+		display: none !important;
+		visibility: hidden;
+		height: 1px;
+		margin: 0;
+	}
+
+	.buyChart.mobileChart {
+		display: none;
+		visibility: visible;
+		height: auto;
+	}
+
+	.buyChart.mobileChart {
+	margin-top: 60px;
+	margin-bottom: 40px;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10vw;
+} 
+
+.mobileChart div {
+	width: 33.3%;
+}
+
+.mobileChart .chartButtonStyle {
+    margin: 0;
+}
+
+.regBlueBox.chartHeader, .darkBlueBox.chartHeader, .finePrint.chartHeader {
+	width: 99.9%;
+	justify-content: center;
+	padding: 14px 0 0 0;
+}
+
+.regBlueBox, .darkBlueBox {
+    padding: 14px 20px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.mobileChart .regBlueBox , .mobileChart .darkBlueBox  {
+    justify-content: center;
+}
+
+.fas.fa-times-circle, .fas.fa-check-circle {
+    padding-left: 0;
+}
+
+.mobileChart .chartButtonStyleMobile {
+	background-color: #FF9D29;
+    border-radius: 13px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.mobileChart a .chartButtonStyleMobile  {
+	color: #000;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.mobileChart .chartButtonStyleMobile span {
+	font-size: 17px;
+	font-weight: normal;
+	text-transform: none;
+	display: block;
+	line-height: 16px;
+	}
+	.finePrint {
+    margin-bottom: 7px;
+    margin-top: 7px;
+	}
+}
+@media only screen and (max-width: 520px) {
+	sup {
+    font-size: 17px;
+    top: -9px;
+    padding: 3px;
+	}
+	.buyChart h1 {
+    margin-bottom: 0;
+    font-size: 30px;
+	}
+	.mobileChart .chartButtonStyleMobile {
+    width: 80%;
+	}
+}
+
+
+
+
+
